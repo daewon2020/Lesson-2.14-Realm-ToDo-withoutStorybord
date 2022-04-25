@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="customCellID" rowHeight="76" id="dI1-9g-esG" customClass="TaskTableViewCell" customModule="Lesson_2_14_Realm_ToDo_withoutStorybord" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dI1-9g-esG" id="VTT-P2-pXJ">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRr-ub-c2N">
+                        <rect key="frame" x="3" y="1" width="321" height="58"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-KR-kyt">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Szi-Tp-Pg6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="checkboxUnchecked">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="isCompletedButtonPressed" destination="dI1-9g-esG" eventType="touchUpInside" id="Co6-Yb-c4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KU-EX-mz2">
+                                <rect key="frame" x="276" y="0.0" width="40" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="aNC-Mi-8Ir"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="bookmarkUnchecked"/>
+                                <connections>
+                                    <action selector="isFavoriteButtonPressed" destination="dI1-9g-esG" eventType="touchUpInside" id="oOe-Hu-yrW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-sZ-bhU">
+                                <rect key="frame" x="40" y="0.0" width="236" height="58"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button g ugh ugh fgdh dg hfgd hgdfh fgd hdgfh gfhfgh">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="clipping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.69999998807907104"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Button g ugh ugh fgdh dg hfgd hgdfh fgd hdgfh gfhfgh">
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="taskNameButtomPressed" destination="dI1-9g-esG" eventType="touchUpInside" id="u68-YB-Xvg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3KU-EX-mz2" firstAttribute="leading" secondItem="Iwp-sZ-bhU" secondAttribute="trailing" id="5tO-HR-W2v"/>
+                            <constraint firstItem="Iwp-sZ-bhU" firstAttribute="top" secondItem="gRr-ub-c2N" secondAttribute="top" id="Ab9-ae-5Kj"/>
+                            <constraint firstAttribute="trailing" secondItem="3KU-EX-mz2" secondAttribute="trailing" constant="5" id="EzF-WX-fPg"/>
+                            <constraint firstAttribute="bottom" secondItem="NQb-KR-kyt" secondAttribute="bottom" id="M6q-zG-h4F"/>
+                            <constraint firstItem="3KU-EX-mz2" firstAttribute="top" secondItem="gRr-ub-c2N" secondAttribute="top" id="R9J-PJ-PLq"/>
+                            <constraint firstItem="NQb-KR-kyt" firstAttribute="leading" secondItem="gRr-ub-c2N" secondAttribute="leading" id="mcX-av-3nq"/>
+                            <constraint firstAttribute="bottom" secondItem="Iwp-sZ-bhU" secondAttribute="bottom" id="tQL-3K-aax"/>
+                            <constraint firstItem="NQb-KR-kyt" firstAttribute="top" secondItem="gRr-ub-c2N" secondAttribute="top" id="v4j-Ab-oMg"/>
+                            <constraint firstItem="Iwp-sZ-bhU" firstAttribute="leading" secondItem="NQb-KR-kyt" secondAttribute="trailing" id="wg8-me-12m"/>
+                            <constraint firstAttribute="bottom" secondItem="3KU-EX-mz2" secondAttribute="bottom" id="y6c-ek-WkB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemRedColor"/>
+                <constraints>
+                    <constraint firstItem="gRr-ub-c2N" firstAttribute="top" secondItem="VTT-P2-pXJ" secondAttribute="top" constant="1" id="DKF-KR-4w3"/>
+                    <constraint firstItem="gRr-ub-c2N" firstAttribute="leading" secondItem="VTT-P2-pXJ" secondAttribute="leading" constant="3" id="iZ7-Yg-SRn"/>
+                    <constraint firstAttribute="bottom" secondItem="gRr-ub-c2N" secondAttribute="bottom" constant="1" id="rUA-1A-EOu"/>
+                    <constraint firstAttribute="trailing" secondItem="gRr-ub-c2N" secondAttribute="trailing" constant="3" id="zgi-i9-Bla"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="vwX-d4-JJv"/>
+            <connections>
+                <outlet property="customView" destination="gRr-ub-c2N" id="Cra-zL-zpM"/>
+                <outlet property="isCompleted" destination="NQb-KR-kyt" id="k1H-fN-bBq"/>
+                <outlet property="isFavorite" destination="3KU-EX-mz2" id="kzU-Kw-w7d"/>
+                <outlet property="taskTitle" destination="Iwp-sZ-bhU" id="EzP-6l-zek"/>
+            </connections>
+            <point key="canvasLocation" x="125.36231884057972" y="97.098214285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmarkUnchecked" width="24" height="24"/>
+        <image name="checkboxUnchecked" width="24" height="24"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
